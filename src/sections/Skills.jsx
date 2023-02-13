@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Skills = () => {
   return (
-    <Container id='skills'>
+    <Container id="skills">
       <AboutMe>
         <h1>Skills</h1>
       </AboutMe>
@@ -41,7 +41,11 @@ const Text = styled.div`
   flex-direction: row;
   padding: 5rem 0 5rem 0;
 `;
-const Title = styled.h1``;
+
+const Title = styled.h1`
+  font-weight: 600;
+  font-size: 1.7rem;
+`;
 
 const Explain = styled.div`
   margin-top: 1rem;

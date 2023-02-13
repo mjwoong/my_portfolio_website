@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Home from "./sections/Home";
-import About from "./sections/About";
+import Introduce from "./sections/Introduce";
 import Skills from "./sections/Skills";
 import Project from "./sections/Project";
 import Contact from "./sections/Contact";
@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <Home />
-      <About />
+      <Introduce />
       <Skills />
       <Project />
       <Contact />

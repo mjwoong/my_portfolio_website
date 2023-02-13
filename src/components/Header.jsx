@@ -10,7 +10,7 @@ const Header = () => {
           <List>Home</List>
         </Link>
         <Link to="about" spy={true} smooth={true}>
-          <List>About</List>
+          <List>Introduce</List>
         </Link>
         <Link to="skills" spy={true} smooth={true}>
           <List>Skills</List>
@@ -35,7 +35,6 @@ const HeaderBar = styled.ul`
   display: flex;
   position: fixed;
   z-index: 1;
-  top: 0;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 2px 2px 30px 30px;
   padding: 0 2rem 0 2rem;
