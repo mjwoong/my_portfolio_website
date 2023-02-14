@@ -35,7 +35,9 @@ const HeaderBar = styled.ul`
   display: flex;
   position: fixed;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background-color: #BDCDD6;
+  opacity: 0.7;
   border-radius: 2px 2px 30px 30px;
   padding: 0 2rem 0 2rem;
 `;
@@ -45,6 +47,7 @@ const List = styled.li`
   font-size: 1.1rem;
   color: #ececec;
   color: #ffffff;
+  color: black;
   opacity: 0.7;
   cursor: pointer;
   :hover {
