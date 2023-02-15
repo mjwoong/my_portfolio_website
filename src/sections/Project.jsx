@@ -22,10 +22,10 @@ const Project = () => {
           image={<img src="img/portfolio.png" className="img" alt="notebook" />}
           title="Portfolio"
           summary="프론트엔드 개발자 개인 포트폴리오 웹사이트"
-          article="React를 기반으로 개발한 개인 포트폴리오 사이트입니다. PC화면 위주로 개발하였으며, 모바일에서도 불편함없이 볼 수 있도록
-          최대한 반응형 웹앱으로 구현할 예정입니다."
-          date="2023.01 - 2023.02"
-          stack="React, Styled Components, Axios, Redux Toolkit"
+          article="React를 기반으로 개발한 개인 포트폴리오 사이트입니다. PC 화면 위주로 개발하였으며, 모바일에서도 불편함없이 볼 수 있도록
+          반응형 웹앱으로 구현할 예정입니다."
+          date="2023.02"
+          stack="React, Styled Components, github.io"
         />
         <ProjectItem />
       </List>

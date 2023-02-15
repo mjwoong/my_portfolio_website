@@ -33,12 +33,14 @@ const ItemMain = styled.div`
   height: 85%;
   background-color: #ffffff;
   border-radius: 1.5rem;
+  box-shadow: 0 5px 18px -7px rgba(0,0,0,1);
 `;
 
 const ItemFooter = styled.div`
   height: 10%;
   background-color: #ffffff;
   border-radius: 1.5rem;
+  box-shadow: 0 5px 18px -7px rgba(0,0,0,1);
 `;
 
 const ImageBox = styled.div`

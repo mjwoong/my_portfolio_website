@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { BsGithub } from "react-icons/bs";
+import Header from '../components/Header';
 
 const Introduce = () => {
   return (
     <Container id="about">
-      <AboutMe>
+      <Subject>
         <h1>Introduce</h1>
-      </AboutMe>
+      </Subject>
       <Text>
         <Title>도전하는 사람</Title>
         <Explain>
@@ -42,7 +43,7 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const AboutMe = styled.div`
+const Subject = styled.div`
   width: 25%;
   padding: 5rem;
   display: flex;

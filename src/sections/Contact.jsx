@@ -23,7 +23,7 @@ const Contact = () => {
 };
 
 const Container = styled.div`
-  height: 50vh;
+  height: 40vh;
   width: 100%;
 `;
 
