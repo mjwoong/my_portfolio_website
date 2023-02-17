@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
-const Header = () => {
+const Nav = () => {
   return (
     <Container>
-      <HeaderBar>
+      <NavBar>
         <Link to="home" spy={true} smooth={true}>
           <List>Home</List>
         </Link>
@@ -21,7 +21,7 @@ const Header = () => {
         <Link to="contact" spy={true} smooth={true}>
           <List>Contact</List>
         </Link>
-      </HeaderBar>
+      </NavBar>
     </Container>
   );
 };
@@ -31,11 +31,10 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const HeaderBar = styled.ul`
+const NavBar = styled.ul`
   display: flex;
   position: fixed;
   z-index: 1;
-  /* background-color: rgba(0, 0, 0, 0.7); */
   background-color: #BDCDD6;
   opacity: 0.7;
   border-radius: 2px 2px 30px 30px;
@@ -55,4 +54,4 @@ const List = styled.li`
   }
 `;
 
-export default Header;
+export default Nav;

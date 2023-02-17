@@ -27,7 +27,6 @@ const Project = () => {
           date="2023.02"
           stack="React, Styled Components, github.io"
         />
-        <ProjectItem />
       </List>
     </Container>
   );
@@ -47,8 +46,17 @@ const Title = styled.div`
   display: flex;
 
   h1 {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 2rem;
+
+    ::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 0.3rem;
+      margin: -0.6rem 0 0 0;
+      background: moccasin;
+    }
   }
 `;
 
@@ -58,6 +66,7 @@ const List = styled.ul`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 2rem;
 `;
 
 export default Project;

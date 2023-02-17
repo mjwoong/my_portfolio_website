@@ -33,8 +33,17 @@ const Title = styled.div`
   justify-content: center;
 
   h1 {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 2rem;
+
+    ::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 0.3rem;
+      margin: -0.6rem 0 0 0;
+      background: moccasin;
+    }
   }
 `;
 
@@ -43,11 +52,11 @@ const Contents = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: normal;
 
   div {
-    padding: 0.5rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
   }

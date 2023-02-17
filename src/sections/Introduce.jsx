@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { BsGithub } from "react-icons/bs";
-import Header from '../components/Header';
 
 const Introduce = () => {
   return (
@@ -28,7 +27,7 @@ const Introduce = () => {
           </Address>
           <Address>
             <a href="https://velog.io/@answodnd112">
-              <img src="img/velog.png" alt='velog'/>
+              <img src="img/velog.png" alt="velog" />
             </a>
           </Address>
         </AddressContainer>
@@ -51,8 +50,17 @@ const Subject = styled.div`
   align-items: center;
 
   h1 {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 2rem;
+
+    ::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 0.3rem;
+      margin: -0.6rem 0 0 0;
+      background: moccasin;
+    }
   }
 `;
 
@@ -60,7 +68,7 @@ const Text = styled.div`
   width: 75%;
   display: flex;
   flex-direction: column;
-  padding: 5rem 0 5rem 0;
+  padding: 7rem 0 7rem 0;
 `;
 
 const Title = styled.h1`
@@ -70,7 +78,7 @@ const Title = styled.h1`
 
 const Explain = styled.div`
   margin: 1rem 0 1rem 0;
-  line-height: 1.4rem;
+  line-height: 1.7rem;
 `;
 
 const AddressContainer = styled.div`

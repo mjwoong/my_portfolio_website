@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { BsGithub, BsFillHouseDoorFill } from "react-icons/bs";
 
 const ProjectItem = ({ image, title, summary, article, date, stack }) => {
   return (
@@ -15,7 +16,10 @@ const ProjectItem = ({ image, title, summary, article, date, stack }) => {
           <Date># 프로젝트 기간 : {date}</Date>
           <Stack># 스택 : {stack} </Stack>
         </ItemMain>
-        <ItemFooter></ItemFooter>
+        <ItemFooter>
+          <BsFillHouseDoorFill />
+          <BsGithub />
+        </ItemFooter>
       </Item>
     </>
   );
@@ -33,14 +37,21 @@ const ItemMain = styled.div`
   height: 85%;
   background-color: #ffffff;
   border-radius: 1.5rem;
-  box-shadow: 0 5px 18px -7px rgba(0,0,0,1);
+  box-shadow: 0 5px 18px -7px rgba(0, 0, 0, 1);
 `;
 
 const ItemFooter = styled.div`
   height: 10%;
   background-color: #ffffff;
   border-radius: 1.5rem;
-  box-shadow: 0 5px 18px -7px rgba(0,0,0,1);
+  box-shadow: 0 5px 18px -7px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  svg {
+    font-size: 1.8rem;
+  }
 `;
 
 const ImageBox = styled.div`
@@ -61,9 +72,11 @@ const ItemHeader = styled.div`
 const ItemTitle = styled.div`
   font-size: 2rem;
   font-weight: 600;
-  padding: 1rem;
+  padding: 1.5rem;
 `;
-const ItemSummary = styled.div``;
+const ItemSummary = styled.div`
+padding: 0.5rem;
+`;
 
 const Article = styled.div`
   height: 25%;
@@ -74,13 +87,13 @@ const Article = styled.div`
 `;
 
 const Date = styled.div`
-  padding: 1.5rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   font-size: 0.8rem;
 `;
 
 const Stack = styled.div`
-  padding: 0 1.5rem 0 1.5rem;
+  padding: 0 1rem 0 1rem;
   font-size: 0.8rem;
 `;
+
 export default ProjectItem;

@@ -1,4 +1,5 @@
-import Header from "./components/Header";
+import "./App.css"
+import Nav from "./components/Nav";
 import Home from "./sections/Home";
 import Introduce from "./sections/Introduce";
 import Skills from "./sections/Skills";
@@ -8,7 +9,7 @@ import Contact from "./sections/Contact";
 function App() {
   return (
     <>
-      <Header />
+      <Nav />
       <Home />
       <Introduce />
       <Skills />

@@ -5,7 +5,7 @@ import TypingText from "../components/TypingText";
 const Home = () => {
   return (
     <>
-      <Container id='home'>
+      <Container id="home">
         <img src="img/home.jpg" className="bg" alt="notebook" />
         <TextBox>
           <TypingText text="Frontend Developer 문재웅입니다." />
