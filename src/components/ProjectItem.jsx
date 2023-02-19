@@ -2,7 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import { BsGithub, BsFillHouseDoorFill } from "react-icons/bs";
 
-const ProjectItem = ({ image, title, summary, article, date, stack }) => {
+const ProjectItem = ({
+  image,
+  title,
+  summary,
+  article,
+  date,
+  stack,
+  demo,
+  github,
+}) => {
   return (
     <>
       <Item>
@@ -17,8 +26,16 @@ const ProjectItem = ({ image, title, summary, article, date, stack }) => {
           <Stack># 스택 : {stack} </Stack>
         </ItemMain>
         <ItemFooter>
-          <BsFillHouseDoorFill />
-          <BsGithub />
+          <Address>
+            <a href={demo}>
+              <BsFillHouseDoorFill />
+            </a>
+          </Address>
+          <Address>
+            <a href={github}>
+              <BsGithub />
+            </a>
+          </Address>
         </ItemFooter>
       </Item>
     </>
@@ -75,7 +92,7 @@ const ItemTitle = styled.div`
   padding: 1.5rem;
 `;
 const ItemSummary = styled.div`
-padding: 0.5rem;
+  padding: 0.5rem;
 `;
 
 const Article = styled.div`
@@ -94,6 +111,12 @@ const Date = styled.div`
 const Stack = styled.div`
   padding: 0 1rem 0 1rem;
   font-size: 0.8rem;
+`;
+
+const Address = styled.div`
+  svg {
+    font-size: 1.8rem;
+  }
 `;
 
 export default ProjectItem;

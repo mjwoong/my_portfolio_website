@@ -17,6 +17,8 @@ const Project = () => {
           UI를 만들었습니다. Toast를 이용한 상황에 따른 알림을 구현했습니다."
           date="2023.01 - 2023.02"
           stack="React, Styled Components, Axios, Redux Toolkit"
+          demo="https://yata-tau.vercel.app/"
+          github="https://github.com/codestates-seb/seb41_main_021"
         />
         <ProjectItem
           image={<img src="img/portfolio.png" className="img" alt="notebook" />}
@@ -26,6 +28,8 @@ const Project = () => {
           반응형 웹앱으로 구현할 예정입니다."
           date="2023.02"
           stack="React, Styled Components, github.io"
+          demo="https://mjwoong.github.io/my_portfolio_website/"
+          github="https://github.com/mjwoong/my_portfolio_website"
         />
       </List>
     </Container>
