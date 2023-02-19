@@ -34,7 +34,7 @@ const Project = () => {
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 55rem;
   background-color: #e1f5fe;
   display: flex;
   flex-direction: column;
