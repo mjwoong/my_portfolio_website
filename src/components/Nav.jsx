@@ -9,7 +9,7 @@ const Nav = () => {
         <Link to="home" spy={true} smooth={true}>
           <List>Home</List>
         </Link>
-        <Link to="about" spy={true} smooth={true}>
+        <Link to="introduce" spy={true} smooth={true}>
           <List>Introduce</List>
         </Link>
         <Link to="skills" spy={true} smooth={true}>
@@ -35,7 +35,7 @@ const NavBar = styled.ul`
   display: flex;
   position: fixed;
   z-index: 1;
-  background-color: #BDCDD6;
+  background-color: #bdcdd6;
   opacity: 0.7;
   border-radius: 2px 2px 30px 30px;
   padding: 0 2rem 0 2rem;
@@ -44,8 +44,6 @@ const NavBar = styled.ul`
 const List = styled.li`
   padding: 1.5rem;
   font-size: 1.1rem;
-  color: #ececec;
-  color: #ffffff;
   color: black;
   opacity: 0.7;
   cursor: pointer;

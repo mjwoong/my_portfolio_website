@@ -12,12 +12,15 @@ const Skills = () => {
           <Title>[ Language ]</Title>
           <SkillContainer>
             <SkillImag>
+              <p className="explain">HTML</p>
               <img src="img/skills/html.png" className="skill" alt="html" />
             </SkillImag>
             <SkillImag>
+              <p className="explain">CSS</p>
               <img src="img/skills/css.png" className="skill" alt="css" />
             </SkillImag>
             <SkillImag>
+              <p className="explain">JavaScript</p>
               <img src="img/skills/js.png" className="skill" alt="javaScript" />
             </SkillImag>
           </SkillContainer>
@@ -26,6 +29,7 @@ const Skills = () => {
           <Title>[ Library & FrameWork ]</Title>
           <SkillContainer>
             <SkillImag>
+              <p className="explain">Styled<br/>Components</p>
               <img
                 src="img/skills/styled.png"
                 className="skill"
@@ -33,9 +37,11 @@ const Skills = () => {
               />
             </SkillImag>
             <SkillImag>
+              <p className="explain">React</p>
               <img src="img/skills/react.png" className="skill" alt="react" />
             </SkillImag>
             <SkillImag>
+              <p className="explain">Redux</p>
               <img src="img/skills/redux.png" className="skill" alt="redux" />
             </SkillImag>
           </SkillContainer>
@@ -44,9 +50,11 @@ const Skills = () => {
           <Title>[ etc. ]</Title>
           <SkillContainer>
             <SkillImag>
+              <p className="explain">Git</p>
               <img src="img/skills/git.png" className="skill" alt="git" />
             </SkillImag>
             <SkillImag>
+              <p className="explain">Notion</p>
               <img src="img/skills/notion.png" className="skill" alt="notion" />
             </SkillImag>
           </SkillContainer>
@@ -122,14 +130,27 @@ const SkillImag = styled.div`
   width: 8rem;
   height: 8rem;
   margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  :hover {
-    opacity: 0.2;
-  }
 
   .skill {
     width: 100%;
     height: 100%;
+    :hover {
+      opacity: 0;
+    }
+  }
+
+  .explain {
+    position: absolute;
+    opacity: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  :hover .explain {
+    opacity: 1;
   }
 `;
 

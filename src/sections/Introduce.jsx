@@ -4,7 +4,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Introduce = () => {
   return (
-    <Container id="about">
+    <Container id="introduce">
       <Subject>
         <h1>Introduce</h1>
       </Subject>
@@ -14,7 +14,7 @@ const Introduce = () => {
           React를 중심으로 WEB / APP 개발 공부를 하고 있는 개발자 문재웅입니다.{" "}
           <br />
           평소 외적인 부분에 민감하여 자연스레 ‘프론트엔드 개발자’가 되기로
-          도전했습니다. 더 좋은 코드와 더 좋은 UI를 위해 끊임없이
+          도전했습니다. <br />더 좋은 코드와 더 좋은 UI를 위해 끊임없이
           노력하겠습니다. <br />
           단체생활을 즐겨 사람들과 적극적으로 소통하는 것을 좋아하고 도전을
           두려워하지 않습니다. <br />잘 부탁드립니다 !
