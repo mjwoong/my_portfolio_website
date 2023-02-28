@@ -19,20 +19,20 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  height: 100vh;
 
   .bg {
     width: 100%;
     height: 100vh;
     object-fit: cover;
     position: relative;
-    filter: blur(3px) brightness(80%);
+    filter: brightness(80%);
   }
 `;
 
 const TextBox = styled.div`
   font-size: 2rem;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
 `;
 

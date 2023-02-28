@@ -39,7 +39,9 @@ const Introduce = () => {
 const Container = styled.div`
   display: flex;
   flex-direction: row;
+  background-color: #eef7ff;
   width: 100%;
+  border-bottom: 1px solid white;
 `;
 
 const Subject = styled.div`
@@ -78,7 +80,7 @@ const Title = styled.h1`
 
 const Explain = styled.div`
   margin: 1rem 0 1rem 0;
-  line-height: 1.7rem;
+  line-height: 1.8rem;
 `;
 
 const AddressContainer = styled.div`

@@ -47,10 +47,11 @@ const Project = () => {
 const Container = styled.div`
   width: 100%;
   height: 55rem;
-  background-color: #e1f5fe;
+  background-color: #eef7ff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 5px 18px -13px rgba(0,0,0,1);
 `;
 
 const Title = styled.div`

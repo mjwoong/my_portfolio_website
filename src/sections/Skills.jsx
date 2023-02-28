@@ -68,11 +68,12 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: #ececec;
+  background-color: #eef7ff;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 5rem;
+  border-bottom: 1px solid white;
 `;
 
 const Header = styled.div`
