@@ -58,7 +58,7 @@ const Contents = styled.div`
   div {
     padding: 1rem;
     display: flex;
-    align-items: center;
+    align-items: center;  
   }
   svg {
     margin-right: 0.5rem;

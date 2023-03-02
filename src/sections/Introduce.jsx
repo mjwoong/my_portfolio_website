@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsInstagram } from "react-icons/bs";
 
 const Introduce = () => {
   return (
@@ -28,6 +28,11 @@ const Introduce = () => {
           <Address>
             <a href="https://velog.io/@answodnd112">
               <img src="img/velog.png" alt="velog" />
+            </a>
+          </Address>
+          <Address>
+            <a href="https://www.instagram.com/_imjw_/">
+              <BsInstagram />
             </a>
           </Address>
         </AddressContainer>
