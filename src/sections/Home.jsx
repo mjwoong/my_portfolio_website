@@ -54,6 +54,17 @@ const TextBox = styled.div`
   font-size: 2rem;
   color: #ffffff;
   position: absolute;
+
+  @media (max-width: 1050px) {
+    font-size: 1.9rem;
+  }
+  @media (max-width: 1023px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    text-align: center;
+  }
 `;
 
 const ProfileButton = styled.div`
@@ -64,7 +75,7 @@ const ProfileButton = styled.div`
   box-shadow: 0 5px 18px -7px rgba(0, 0, 0, 1);
   cursor: pointer;
   :hover {
-    opacity: 0.7;
+    padding: 1.1rem;
   }
 
   div {

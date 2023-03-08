@@ -66,6 +66,12 @@ const ModalBlock = styled.div`
   color: black;
   width: 40rem;
   height: 30rem;
+
+  @media (max-width: 768px) {
+    width: 15rem;
+    width: 75%;
+    height: 25rem;
+  }
 `;
 
 const CloseBtnContainer = styled.div`

@@ -78,31 +78,35 @@ const Nav = () => {
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   background-color: #ffffff;
   z-index: 1;
   position: fixed;
-  width: 100%;
-  height: 5rem;
+  width: 100vw;
   box-shadow: 0 5px 18px -13px rgba(0, 0, 0, 1);
 `;
 
 const Title = styled.div`
-  margin-left: 15rem;
-  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 40%;
   font-weight: bold;
   color: #6e85b7;
   :hover {
     opacity: 0.7;
   }
   cursor: pointer;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
 `;
 
 const NavBar = styled.ul`
   display: flex;
-  padding: 0 10rem 0 10rem;
+  justify-content: center;
+  width: 60%;
 
   .scroll-text {
     transition: 0.5s;
@@ -130,6 +134,10 @@ const List = styled.li`
   opacity: 0.5;
   :hover {
     opacity: 1;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 1rem;
   }
 `;
 

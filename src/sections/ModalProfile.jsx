@@ -66,6 +66,11 @@ const ImageContainer = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  @media (max-width: 768px) {
+    width: 8rem;
+    height: 8rem;
+  }
 `;
 
 const ListContainer = styled.div`
@@ -75,6 +80,11 @@ const ListContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
 `;
 
 export default ModalProfile;

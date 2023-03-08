@@ -63,6 +63,10 @@ const Contents = styled.div`
   svg {
     margin-right: 0.5rem;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
 `;
 
 export default Contact;

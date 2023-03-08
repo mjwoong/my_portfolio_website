@@ -38,6 +38,15 @@ const Item = styled.div`
     font-size: 1rem;
     padding: 0.5rem;
   }
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: 0.8rem;  
+    }
+    .content {
+      font-size: 0.7rem;
+    }
+  }
 `;
 
 const Title = styled.div`
@@ -47,6 +56,8 @@ const Title = styled.div`
 
   .iconBox {
     color: #6e85b7;
+    display: flex;
+    align-items: center;
   }
 `;
 

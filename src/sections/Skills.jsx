@@ -29,7 +29,11 @@ const Skills = () => {
           <Title>[ Library & FrameWork ]</Title>
           <SkillContainer>
             <SkillImag>
-              <p className="explain">Styled<br/>Components</p>
+              <p className="explain">
+                Styled
+                <br />
+                Components
+              </p>
               <img
                 src="img/skills/styled.png"
                 className="skill"
@@ -108,18 +112,34 @@ const Section = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h1`
-  width: 20rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 40%;
   height: 8rem;
-  padding-left: 15rem;
   font-weight: normal;
   font-size: 1.3rem;
+
+  @media (max-width: 1023px) {
+    width: auto;
+    height: 4rem;
+  }
 `;
 
 const SkillContainer = styled.div`
-  width: 50%;
   display: flex;
   margin-bottom: 3rem;
 `;
@@ -152,6 +172,12 @@ const SkillImag = styled.div`
   }
   :hover .explain {
     opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 1rem;
   }
 `;
 

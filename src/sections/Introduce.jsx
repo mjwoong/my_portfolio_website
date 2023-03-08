@@ -44,9 +44,15 @@ const Introduce = () => {
 const Container = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #eef7ff;
   width: 100%;
   border-bottom: 1px solid white;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
 `;
 
 const Subject = styled.div`
@@ -69,6 +75,13 @@ const Subject = styled.div`
       background: moccasin;
     }
   }
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  @media (max-width: 768px) {
+    padding: auto;
+  }
 `;
 
 const Text = styled.div`
@@ -76,6 +89,13 @@ const Text = styled.div`
   display: flex;
   flex-direction: column;
   padding: 7rem 0 7rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1023px) {
+    padding: 0 0 2rem;
+  }
 `;
 
 const Title = styled.h1`

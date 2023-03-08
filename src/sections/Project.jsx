@@ -52,6 +52,10 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   box-shadow: 0 5px 18px -13px rgba(0,0,0,1);
+
+  @media (max-width: 1023px) {
+    height: auto;
+  }
 `;
 
 const Title = styled.div`
@@ -80,6 +84,11 @@ const List = styled.ul`
   justify-content: space-around;
   align-items: center;
   margin-top: 2rem;
+
+  @media (max-width: 1023px) {
+    height: auto;
+    flex-direction: column;
+  }
 `;
 
 export default Project;

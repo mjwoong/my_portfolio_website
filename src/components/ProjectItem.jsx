@@ -48,6 +48,13 @@ const Item = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 5rem;
+  }
+  @media (max-width: 768px) {
+    width: 18rem;
+  }
 `;
 
 const ItemMain = styled.div`
@@ -90,6 +97,9 @@ const ItemTitle = styled.div`
   font-size: 2rem;
   font-weight: 600;
   padding: 1.5rem;
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
 `;
 const ItemSummary = styled.div`
   padding: 0.5rem;
@@ -101,6 +111,9 @@ const Article = styled.div`
   font-size: 0.8rem;
   line-height: 1.5rem;
   border-bottom: 0.5px solid lightgray;
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
 `;
 
 const Date = styled.div`
