@@ -48,6 +48,10 @@ const Skills = () => {
               <p className="explain">Redux</p>
               <img src="img/skills/redux.png" className="skill" alt="redux" />
             </SkillImag>
+            <SkillImag>
+              <p className='explain'>Bootstrap</p>
+              <img src='img/skills/bootstrap.png' className='skill' alt='bootstrap' />
+            </SkillImag>
           </SkillContainer>
         </Section>
         <Section>

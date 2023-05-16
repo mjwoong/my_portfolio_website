@@ -17,15 +17,26 @@ const projectList = [
   },
   {
     id: 2,
-    image: <img src="img/portfolio.png" className="img" alt="notebook" />,
+    image: <img src="img/portfolio.png" className="img" alt="portfolio site" />,
     title: "Portfolio",
     summary: "프론트엔드 개발자 개인 포트폴리오 웹사이트",
     article:
-      "React를 기반으로 개발한 개인 포트폴리오 사이트입니다. PC 화면 위주로 개발하였으며, 모바일에서도 불편함없이 볼 수 있도록 반응형 웹앱으로 구현할 예정입니다.",
+      "React를 기반으로 개발한 개인 포트폴리오 사이트입니다. PC 화면 위주로 개발하였으며, 모바일에서도 불편함없이 볼 수 있도록 반응형 웹앱으로 구현했습니다.",
     date: "2023.02",
     stack: "React, Styled Components, github.io",
     demo: "https://mjwoong.github.io/my_portfolio_website/",
     github: "https://github.com/mjwoong/my_portfolio_website",
+  },
+  {
+    id: 3,
+    image: <img src="img/h&m.png" className='img' alt='h&m site' />,
+    title: "H&M",
+    summary: "H&M 클론 코딩",
+    article: "H&M 사이트를 클론 코딩한 사이트입니다. Json server를 이용하여 api를 호출했고, 상품 검색 기능과 간단한 로그인 기능을 구현했습니다. ",
+    date: "2023.04",
+    stack: "React, Bootstrap, Netlify",
+    demo: "https://mjwoong-hnm-website.netlify.app/",
+    github: "https://github.com/mjwoong/hnm-react-router-practice",
   },
 ];
 
@@ -78,7 +89,7 @@ const Title = styled.div`
 `;
 
 const List = styled.ul`
-  width: 75%;
+  width: 100%;
   height: 40rem;
   display: flex;
   justify-content: space-around;

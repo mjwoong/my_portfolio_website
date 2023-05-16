@@ -39,7 +39,7 @@ const ModalProfile = () => {
   return (
     <>
       <ImageContainer>
-        <image src="img/me.png" className="img"></image>
+        <img src="img/me.png" alt="profile_image" className="img"></img>
       </ImageContainer>
       <ListContainer>
         {profileList.map((it) => (
